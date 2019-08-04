@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>Chatter-Box</title>
+<link rel="stylesheet" href="/css/style.css" />
+<script>
+   function validation(){
+	   let user = document.getElementById('name');
+	   let listOptions = document.querySelectorAll("#list option");
+
+
+	   if (user.value.length <= 20 && user.value.length >= 6) {} else {
+	     alert("Username has to be between 6-20 characters.")
+	   }
+
+
+	   for (let i = 0; i < listOptions.length; i++) {
+	     if (listOptions[i].value === user.value) {
+	       alert('The name already exist')
+	     }
+	   }
+	   return false;
+	}
+</script>
+</head>
+<body>
+
+	<div id="welcome-page">
+		<div class="welcome-page-container">
+			<h1 class="title">
+				Welcome Chatter-Box<br>
+			</h1>
+
+			<p class="instructions">Join in the conversation!</p>
+			<form id="welcomeForm" onsubmit="return validation()" name="welcomeForm">
+				<div class="form-group">
+					<input type="text" id="name" placeholder="Enter your user name..."
+						class="form-control"/>
+				</div>
+				<div class="form-group">
+					<button type="submit" onclass="accent username-submit">Join
+						In</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div id="dialogue-page" class="hidden">
+		<div class="dialogue-container">
+			<div class="dialogue-header">
+				<h2>Chatter-Box</h2>
+			</div>
+			<ul id="messageList">
+			</ul>
+			<form id="dialogueForm" name="dialogueForm" nameForm="dialogueForm">
+				<div class="form-group">
+					<div class="input-group clearfix">
+						<input type="text" id="chatMessage"
+							placeholder="Enter a message...." autocomplete="off"
+							class="textbox" />
+						<button type="submit" class="sendbtn">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>
