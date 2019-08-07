@@ -163,12 +163,12 @@ button.accent {
 #dialogue-page #dialogueForm {
 	padding: 20px;
 	border-radius: 10px;
+	width: auto;
 }
 
 #dialogue-page ul li {
 	line-height: 2.0rem;
 	padding: 10px 20px;
-	
 }
 
 #dialogue-page ul li p {
@@ -186,7 +186,6 @@ button.accent {
 }
 
 #dialogue-page .event-data {
-	width: 100%;
 	text-align: center;
 	clear: both;
 }
@@ -271,7 +270,6 @@ button.accent {
 .dialogue-header h2 {
 	margin: 0;
 	font-weight: 500;
-	background-color: red;
 }
 
 @media screen and (max-width: 730px) {
