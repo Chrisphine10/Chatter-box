@@ -182,14 +182,17 @@ button.accent {
 	width: 90%;
   	height: auto;
   	word-wrap: break-word;
-  	white-space: pre-wrap
+  	white-space: pre-wrap;
 }
 
 #dialogue-page .event-data {
 	text-align: center;
 	clear: both;
 }
-
+.footer{
+	align-content: center;
+	
+}
 #dialogue-page .event-data p {
 	color: #777;
 	font-size: 14px;
