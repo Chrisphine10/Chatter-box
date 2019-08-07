@@ -271,6 +271,7 @@ button.accent {
 .dialogue-header h2 {
 	margin: 0;
 	font-weight: 500;
+	background-color: red;
 }
 
 @media screen and (max-width: 730px) {

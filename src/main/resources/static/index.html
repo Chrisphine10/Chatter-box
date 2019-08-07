@@ -11,14 +11,17 @@
 	   let listOptions = document.querySelectorAll("#list option");
 
 
-	   if (user.value.length <= 20 && user.value.length >= 6) {} else {
-	     alert("Username has to be between 6-20 characters.")
+	   if (user.value.length <= 20 && user.value.length >= 6) {}
+	   else {
+	     alert("Username has to be between 6-20 characters.");
+	     location.reload();
 	   }
 
 
 	   for (let i = 0; i < listOptions.length; i++) {
 	     if (listOptions[i].value === user.value) {
-	       alert('The name already exist')
+	       alert('The name already exist');
+	       location.reload();
 	     }
 	   }
 	   return false;
