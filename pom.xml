@@ -47,18 +47,6 @@
 			<artifactId>spring-boot-starter-reactor-netty</artifactId>
 		</dependency>
 	</dependencies>
-	<build>
-  <plugins>
-    <plugin>
-      <!-- Build an executable JAR -->
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-jar-plugin</artifactId>
-      <configuration>
-        <processTypes>
-        <web>java -Dserver.port=$PORT -jar target/spring-boot-websocket-chat-0.0.1-SNAPSHOT.jar</web>
-    </processTypes>
-      </configuration>
-    </plugin>
-  </plugins>
-</build>
+
+
 </project>
