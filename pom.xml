@@ -58,7 +58,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.javainuse.WebsocketChatApplication.class</mainClass>
+            <mainClass>com.javainuse.WebsocketChatApplication</mainClass>
           </manifest>
         </archive>
       </configuration>
